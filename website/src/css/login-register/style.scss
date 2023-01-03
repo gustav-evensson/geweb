@@ -1,0 +1,173 @@
+main {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 100%;
+	height: 100%;
+    min-height: 700px;
+	background-color: #262626;
+	.artSection,
+	.formSection {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.artSection {
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	.formSection {
+        gap: 100px;
+        min-height: max-content;
+		.headings {
+			text-align: center;
+			h1 {
+				font-size: 64px;
+				font-weight: 400;
+				color: white;
+			}
+			h4 {
+				font-size: 24px;
+				font-weight: 400;
+				margin-top: 20px;
+				color: #bebebe;
+			}
+			@media screen and (max-width: 1600px) {
+				h1 {
+					font-size: 48px;
+				}
+			}
+			@media screen and (max-width: 550px) {
+				h1 {
+					font-size: 32px;
+				}
+				h4 {
+					font-size: 18px;
+				}
+			}
+		}
+        .geLogo{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            display: none;
+        }
+		form {
+			width: 70%;
+			max-width: 600px;
+			min-width: 350px;
+			.inputContainer {
+				border-top: solid 1px #666666;
+				padding: 20px;
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+				label {
+					color: #666666;
+					font-weight: 300;
+					transition: color 300ms;
+				}
+				input {
+					padding-block: 5px;
+					background-color: transparent;
+					border: none;
+					outline: none;
+					font-size: 20px;
+					color: white;
+				}
+			}
+			.password{
+				.inputWrapper{
+					display: flex;
+					align-items: center;
+					input{
+						width: 100%;
+					}
+					.showHide{
+						height: 42px;
+						width: 42px;
+						border: none;
+						border-radius: 0;
+						background-color: transparent;
+						svg{
+							path{
+								transition: all 300ms;
+								stroke-dasharray: 0;
+								stroke-dashoffset: 0;
+							}
+							.showPassword{
+								stroke-dasharray: 50;
+								stroke-dashoffset: 50;
+							}
+						}
+					}
+				}
+			}
+			.inputContainer:focus-within {
+				label {
+					color: white;
+				}
+				svg{
+					path{
+						stroke: white;
+					}
+				}
+			}
+			.submit {
+				width: 100%;
+				height: 60px;
+				border: none;
+				font-size: 24px;
+				font-weight: 500;
+				border-radius: 10px;
+				background-color: #a8a8a8;
+				transition: all 300ms;
+				outline: none;
+			}
+			.submit:hover,
+			.submit:focus {
+				background-color: white;
+				cursor: pointer;
+			}
+		}
+		.bottomLink {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			gap: 10px;
+			p {
+				color: white;
+			}
+			.register-login-link {
+				color: #3391ff;
+				text-decoration: underline 1px;
+			}
+			.register-login-link:focus {
+				color: white;
+			}
+		}
+	}
+	@media screen and (max-width: 1100px) {
+		.artSection {
+			display: none;
+		}
+        .formSection{
+            height: max-content;
+            gap: 50px;
+            .headings{
+                display: none;
+            }
+            .geLogo{
+                display: block;
+            }
+        }
+	}
+}

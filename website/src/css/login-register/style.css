@@ -1,0 +1,234 @@
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 700px;
+  background-color: #262626;
+}
+
+main .artSection,
+main .formSection {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .artSection img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .formSection {
+  gap: 100px;
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+}
+
+main .formSection .headings {
+  text-align: center;
+}
+
+main .formSection .headings h1 {
+  font-size: 64px;
+  font-weight: 400;
+  color: white;
+}
+
+main .formSection .headings h4 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 20px;
+  color: #bebebe;
+}
+
+@media screen and (max-width: 1600px) {
+  main .formSection .headings h1 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main .formSection .headings h1 {
+    font-size: 32px;
+  }
+  main .formSection .headings h4 {
+    font-size: 18px;
+  }
+}
+
+main .formSection .geLogo {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  display: none;
+}
+
+main .formSection form {
+  width: 70%;
+  max-width: 600px;
+  min-width: 350px;
+}
+
+main .formSection form .inputContainer {
+  border-top: solid 1px #666666;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+main .formSection form .inputContainer label {
+  color: #666666;
+  font-weight: 300;
+  -webkit-transition: color 300ms;
+  transition: color 300ms;
+}
+
+main .formSection form .inputContainer input {
+  padding-block: 5px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: white;
+}
+
+main .formSection form .password .inputWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .formSection form .password .inputWrapper input {
+  width: 100%;
+}
+
+main .formSection form .password .inputWrapper .showHide {
+  height: 42px;
+  width: 42px;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+main .formSection form .password .inputWrapper .showHide svg path {
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+}
+
+main .formSection form .password .inputWrapper .showHide svg .showPassword {
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+}
+
+main .formSection form .inputContainer:focus-within label {
+  color: white;
+}
+
+main .formSection form .inputContainer:focus-within svg path {
+  stroke: white;
+}
+
+main .formSection form .submit {
+  width: 100%;
+  height: 60px;
+  border: none;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 10px;
+  background-color: #a8a8a8;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  outline: none;
+}
+
+main .formSection form .submit:hover,
+main .formSection form .submit:focus {
+  background-color: white;
+  cursor: pointer;
+}
+
+main .formSection .bottomLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+main .formSection .bottomLink p {
+  color: white;
+}
+
+main .formSection .bottomLink .register-login-link {
+  color: #3391ff;
+  -webkit-text-decoration: underline 1px;
+          text-decoration: underline 1px;
+}
+
+main .formSection .bottomLink .register-login-link:focus {
+  color: white;
+}
+
+@media screen and (max-width: 1100px) {
+  main .artSection {
+    display: none;
+  }
+  main .formSection {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    gap: 50px;
+  }
+  main .formSection .headings {
+    display: none;
+  }
+  main .formSection .geLogo {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

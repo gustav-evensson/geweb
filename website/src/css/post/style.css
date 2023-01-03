@@ -1,0 +1,52 @@
+.postComp {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-bottom: solid 1px #666666;
+  padding: 25px;
+  gap: 25px;
+  text-decoration: none;
+}
+
+.postComp p {
+  color: white;
+}
+
+.postComp .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+
+.postComp .user img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.postComp .user p {
+  color: #666666;
+}
+
+.postComp .postContent {
+  width: 70%;
+  min-width: 300px;
+  max-width: 700px;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+#app {
+  width: 100%;
+  height: 100vh;
+}
+
+.v-enter-active,
+.v-leave-active {
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+.fullPageContainer {
+  width: 100%;
+  height: 100vh;
+  min-height: 700px;
+  background-color: #1B1B1B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.fullPageContainer .mainContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: transparent;
+  height: 100vh;
+  width: 100%;
+}
+
+.fullPageContainer .mainContainer h1 {
+  margin: 25px;
+  color: white;
+}
+
+.list {
+  height: 100%;
+  width: 100%;
+  background-color: #1B1B1B;
+  display: block;
+  overflow-y: auto;
+}
+
+.list .listItem {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-bottom: solid 1px #666666;
+  padding: 25px;
+  gap: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+.list .listItem .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+
+.list .listItem .user img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.list .listItem .user p {
+  color: #666666;
+}
+
+.list .listItem .postContent {
+  width: 70%;
+  min-width: 300px;
+  max-width: 700px;
+  color: white;
+}
+
+.list .follow {
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list .follow button {
+  padding: 7px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: #3391FF;
+  color: white;
+  border: none;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.list .follow .unfollow {
+  background-color: #2a2a2a;
+}
+
+.list .follow button:hover, .list .follow button:focus {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+  cursor: pointer;
+}
+
+.list .empty {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  font-size: 24px;
+  color: white;
+}
+
+.list .empty a {
+  color: #3391FF;
+  text-decoration: none;
+}
+
+.list .empty a:hover, .list .empty a:focus {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */

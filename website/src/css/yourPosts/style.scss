@@ -1,0 +1,10 @@
+.yourPostsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: transparent;
+    h1{
+        margin: 25px;
+        color: white;
+    }
+}
